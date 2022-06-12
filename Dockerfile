@@ -9,6 +9,8 @@ RUN npm install --only=dev --ignore-scripts
 
 COPY . .
 
+RUN dir
+
 RUN set -x \
 && apt-get update \
 && apt-get install gconf-service libasound2 libatk1.0-0 libc6 libcairo2 libcups2 libdbus-1-3 \
